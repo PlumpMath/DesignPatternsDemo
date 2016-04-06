@@ -14,9 +14,13 @@
             string activityId1 = "act1";
             var mediator = new ActivityMediator();
 
-            var seller1 = new User(mediator) { Id="us1", Name="user1" };
-            var buyer1 = new User(mediator) { Id = "us2", Name = "user2" };
-            var buyer2 = new User(mediator) { Id = "us3", Name = "user3" };
+            //var seller1 = new User(mediator) { Id="us1", Name="user1" };
+            //var buyer1 = new User(mediator) { Id = "us2", Name = "user2" };
+            //var buyer2 = new User(mediator) { Id = "us3", Name = "user3" };
+
+            var seller1 = new Seller(mediator) { Id = "us1", Name = "user1" };
+            var buyer1 = new Buyer(mediator) { Id = "us2", Name = "user2" };
+            var buyer2 = new Buyer(mediator) { Id = "us3", Name = "user3" };
 
             // Register the users.
             WriteLine(string.Empty);
